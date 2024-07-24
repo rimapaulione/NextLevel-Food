@@ -10,7 +10,10 @@ function Button({ slug, image }) {
   return (
     <button
       className={styles.button}
-      onClick={() => handleDelete({ slug, image })}
+      onClick={() => {
+        if (confirm("Are you sure you want to delete reservation?"))
+          handleDelete({ slug, image });
+      }}
     >
       {pending ? "Deleting..." : "Delete"}
     </button>

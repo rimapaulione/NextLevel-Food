@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { getMeal } from "@/lib/meals";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const meal = getMeal(params.mealSlug);
