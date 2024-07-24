@@ -1,0 +1,15 @@
+.button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #ea0404, #ff5805);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:active {
+  background: linear-gradient(90deg, #ea0404, #ff5805);
+  box-shadow: 0 0 12px rgba(242, 55, 18, 0.8);
+}
